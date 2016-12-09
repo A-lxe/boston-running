@@ -1037,6 +1037,14 @@
 
 /* Footer */
 
+#footer h1 {
+	color: lightgray;
+}
+#footer p{
+	color: gray;
+	margin: 10px;
+}
+
 	#footer {
 		background: #202222;
 		color: #888;
