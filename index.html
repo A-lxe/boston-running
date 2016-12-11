@@ -33,7 +33,7 @@
 		<!-- Banner -->
 			<section id="banner">
 				<h2>This is Boston Running</h2>
-				<p>Red Black One Pack</p>
+				<p>Discovering Where and Why Bostonians Run</p>
 				
 				
 			</section>
@@ -43,11 +43,18 @@
 				<div class="container">
 					<header>
 						<h2>What is the Boston Running Project?</h2>
-						<p>We set out to show how Boston runners choose where to run.
+						<p>Long ago, on a continent not so far away, there were once tribes of humans that would run. Run across the plains of Africa.
+						Run so far and so fast as to outrun their prey. Over the tens of millennia since those days mankind has continued to run. 
+						Not just for survival but also for sport and for personal improvement. 
+						These days, we in the city of Boston, eek out time from our busy lives to run.
+						The difficult part is where to run. Do we run on the sidewalks, along the river, or through trails in the parks? 
+						Questions dealing with where, when, and why rack our minds when deciding on a new route. This is what we hope to solve.
+						We endeavor to ease this process and to ascertain why people in Boston run where they run.
+						</p>
+						<p> (OLD) We set out to show how Boston runners choose where to run.
 							By analyzing thousands of running routes and comparing their densities
 							to the density of trees and pedestrians throughout the city, we hoped to find 
-							a correlation which would indicate that runners choose their routes based on their surroundings.
-						</p>
+							a correlation which would indicate that runners choose their routes based on their surroundings. </p>
 					</header>
 					<div class="row 200%">
 						<section class="4u 12u$(small)">
@@ -71,37 +78,31 @@
 				<div class="container">
 					<header>
 						<h2>We Aimed to Show Why People Run Where They Run</h2>
-						<p>By Looking at Whether They Run and What is Around Them.</p>
+						<p>By Looking at What Surrounds Them Where They Run Most</p>
 					</header>
-					<div class="row">
-						<section class="feature 6u 12u$(small)">
-							<img class="image fit" src="test-pic.jpg" alt="" />
-							<h3 class="title">Pedestrians and Bikes</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsa voluptate, quae quibusdam. Doloremque similique, reiciendis sit quibusdam aperiam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						</section>
-						<section class="feature 6u$ 12u$(small)">
-							<img class="image fit" src="images/pic02.jpg" alt="" />
-							<h3 class="title"> Parks and Greenery</h3>
-							<p>Natus perspiciatis fugit illum porro iusto fuga nam voluptas minima voluptates deserunt, veniam reiciendis harum repellat necessitatibus. Animi, adipisci qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						</section>
-						
-					</div>
 					<div class="row">
 						<section class="feature 6u 12u$(xlarge)">
 							<img class="image fit" src="boston.png" alt="" />
 							<h3 class="title">Running Routes</h3>
-							<p>Here is a basic heatmap of the running routes in boston........</p>
+							<p>Here is a basic heatmap of the running routes in boston. This heatmap was generated using R which in turn used data collected using Python from the MapMyRun API. The current iteration of this heatmap uses 1600 different routes to show the areas that people run in. <br> As you can see there is quite a few routes that go through the center of the city. It seems to radiate out from the center of the city along major streets. A possible reason for the routes to be centered on the center of the city is because when we pulled data from the MapMyRun API we used a point fairly close to the Boston Commons. This could very well account for this effect as only the closest of the routes might have actually been pulled from the API.	</p>
 						</section>
-						
-						
 					</div>
-					<footer>
-						<ul class="actions">
-							<li>
-								<a href="#" class="button alt big">Learn More</a>
-							</li>
-						</ul>
-					</footer>
+					<div class="row">
+						<section class="feature 6u 12u$(small)">
+							<img class="image fit" src="boston-pedestrians.png" alt="" />
+							<h3 class="title">Pedestrians and Bikes</h3>
+							<p>This is a heatmap we generated of the pedestrian and bycicle traffic in the city of Boston....(make sure to include part about error)</p>
+						</section>
+						<section class="feature 6u$ 12u$(small)">
+							<img class="image fit" src="images/tree-heatmap.png" alt="" />
+							<h3 class="title"> Parks and Greenery</h3>
+							<p>Above is a basic heatmap of trees in Boston which we are using represent greenspace 
+								throughout the city. To make this map we used a set of data, collected by the city
+								which describes the location of every tree within city limits. Each point on the map 
+								is set at a low opacity so that overlapping points create dark 
+								zones, indicating more densely vegitated areas. </p>
+						</section>	
+					</div>
 				</div>
 			</section>
 
@@ -113,7 +114,7 @@
 							<h3>Credits</h3>
 							<h1>Sarah Wessel</h1>
 							<p>wessel.s@husky.neu.edu</p>
-							<p>Worked to create heatmap of green-space data, website design</p>
+							<p>Created heatmap of green-space data, website design</p>
 
 							<h1>Will Epstein</h1>
 							<p>epstein.w@husky.neu.edu</p>
@@ -122,7 +123,7 @@
 							<h1>Alex Aubuchon</h1>
 							<p>aubuchon.al@husky.neu.edu</p>
 							<p>Contacted mapmyrun API to retrieve running route data, 
-								created R script to visualize running data.</p>
+								created R script to visualize running data</p>
 
 							<h1>Yasmine Ghannam</h1>
 							<p>ghannam.y@husky.neu.edu</p>
