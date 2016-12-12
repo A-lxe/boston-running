@@ -27,15 +27,15 @@
 
 		<!-- Header -->
 			<header id="header">
-				
+
 			</header>
 
 		<!-- Banner -->
 			<section id="banner">
 				<h2>This is Boston Running</h2>
 				<p>Discovering Where and Why Bostonians Run</p>
-				
-				
+
+
 			</section>
 
 		<!-- One -->
@@ -44,16 +44,16 @@
 					<header>
 						<h2>What is the Boston Running Project?</h2>
 						<p>Long ago, on a continent not so far away, there were once tribes of humans that would run. Run across the plains of Africa.
-						Run so far and so fast as to outrun their prey. Over the tens of millennia since those days mankind has continued to run. 
-						Not just for survival but also for sport and for personal improvement. 
+						Run so far and so fast as to outrun their prey. Over the tens of millennia since those days mankind has continued to run.
+						Not just for survival but also for sport and for personal improvement.
 						These days, we in the city of Boston, eek out time from our busy lives to run.
-						The difficult part is where to run. Do we run on the sidewalks, along the river, or through trails in the parks? 
+						The difficult part is where to run. Do we run on the sidewalks, along the river, or through trails in the parks?
 						Questions dealing with where, when, and why rack our minds when deciding on a new route. This is what we hope to solve.
 						We endeavor to ease this process and to ascertain why people in Boston run where they run.
 						</p>
 						<p> (OLD) We set out to show how Boston runners choose where to run.
 							By analyzing thousands of running routes and comparing their densities
-							to the density of trees and pedestrians throughout the city, we hoped to find 
+							to the density of trees and pedestrians throughout the city, we hoped to find
 							a correlation which would indicate that runners choose their routes based on their surroundings. </p>
 					</header>
 					<div class="row 200%">
@@ -81,7 +81,7 @@
 						<p>By Looking at What Surrounds Them Where They Run Most</p>
 					</header>
 					<div class="row">
-						<section class="feature 6u 12u$(xlarge)">
+						<section class="feature 6u 12u$(xlarge)" style="width: 100%">
 							<img class="image fit" src="boston.png" alt="" />
 							<h3 class="title">Running Routes</h3>
 							<p>Here is a basic heatmap of the running routes in boston. This heatmap was generated using R which in turn used data collected using Python from the MapMyRun API. The current iteration of this heatmap uses 1600 different routes to show the areas that people run in. <br> As you can see there is quite a few routes that go through the center of the city. It seems to radiate out from the center of the city along major streets. A possible reason for the routes to be centered on the center of the city is because when we pulled data from the MapMyRun API we used a point fairly close to the Boston Commons. This could very well account for this effect as only the closest of the routes might have actually been pulled from the API.	</p>
@@ -91,34 +91,34 @@
 						<section class="feature 6u 12u$(small)">
 							<img class="image fit" src="boston-pedestrians.png" alt="" />
 							<h3 class="title">Pedestrians and Bikes</h3>
-							<p>The map above is a heat map of pedestrian/bike density in Boston. 
-							We used a pedestrian/bike count database, which is a collection of pedestrian sighting that we found on the Boston Region MPO Website, to generate this heat map using R. 
+							<p>The map above is a heat map of pedestrian/bike density in Boston.
+							We used a pedestrian/bike count database, which is a collection of pedestrian sighting that we found on the Boston Region MPO Website, to generate this heat map using R.
 							The darker each area on the map is, the higher the density of pedestrians and bikers is in that area.</p>
 						</section>
 						<section class="feature 6u$ 12u$(small)">
 							<img class="image fit" src="images/tree-heatmap.png" alt="" />
 							<h3 class="title"> Parks and Greenery</h3>
-							<p>Above is a basic heatmap of trees in Boston which we are using represent greenspace 
+							<p>Above is a basic heatmap of trees in Boston which we are using represent greenspace
 								throughout the city. To make this map we used a set of data, collected by the city
-								which describes the location of every tree within city limits. Each point on the map 
-								is set at a low opacity so that overlapping points create dark 
+								which describes the location of every tree within city limits. Each point on the map
+								is set at a low opacity so that overlapping points create dark
 								zones, indicating more densely vegitated areas. </p>
 						</section>
 						</div>
-						
+
 						<div class="row">
 						<section class="feature 6u 12u$(small)">
 							<img class="image fit" src="boston-running-pedestrians.png" alt="" />
 							<h3 class="title">Running Around Pedestrians</h3>
-							<p>This overlay is a little more complicated that the parks overlay. While there is a high volume of pedestrians and bicycles going throughout the city there is quite a high volume around Back Bay and the West End up into Campbridge. However there are quite a few running routes that go through this area as well. This would seem to suggest that where people run is not impacted by where pedestrians walk and cyclists cycle. However there is no way to know if there is some overlap between those people who were counted as pedestrians and those people who are running. However, even accounting for this there does seem to be a serious lack of correlation between where people run and if there are pedestrians walking there. </p>
+							<p>This overlay is a little more complicated than the parks overlay to the right. While there is a high volume of pedestrians and bicycles going throughout the city there is quite a high volume around Back Bay and the West End up into Campbridge. However there are quite a few running routes that go through this area as well. This would seem to suggest that where people run is not impacted by where pedestrians walk and cyclists cycle. Though runners do run where bikes largely cannot (see Eastern and downtown Boston), they also run where they can and do. One thing to take notice of is the intersection of runners and cyclists on and especially at the Boston ends of the Charles and Longfellow bridges. If the City were to look into the dynamics of runners relative to other pedestrians, these would be the most pertinent areas of focus.</p>
 						</section>
 						<section class="feature 6u$ 12u$(small)">
 							<img class="image fit" src="boston-running-trees.png" alt="" />
 							<h3 class="title"> Running in Parks</h3>
-							<p>This heatmap overlays the major running routes with the parks in Boston. As you can see the grey lines, which denote the routes of the runners, do follow some of the more green areas of the city. However they also do go up into CAmbridge. Unfortuantely there is no park information about that area so no way to see what is around those areas. However, where there is park data about the location of the trees we can clearly see that there is a large number of routes going through that area.</p>
+							<p>This heatmap overlays the major running routes with the parks and vegetation in Boston. The number of runners in an area controls the opacity of the cell, and the number of trees control the color. Unfortunately, we did not take into account trees in Cambridge, which explains the entirely gray cells there. Observing the graph, it would appear that runners generally do not travel where there isn't at least some scenery. Besides some gray in southern downtown where there are major highways (something the City of Boston might want to look into for immproving scenery), and the gray line around the breakwater of Pleasure Bay, running routes largely coincide with scenic areas. Some particularly scenic and well run areas are the coastline between the two bridges, as well as the larger swath spanning from BU to downtown. </p>
 						</section>
 						</div>
-				
+
 				</div>
 			</section>
 
@@ -126,7 +126,7 @@
 			<footer id="footer">
 				<div class="container">
 					<div class="align-center">
-						<section class="4u$ 12u$(xlarge) 12u$(small) footer-text">
+						<section class="4u$ 12u$(xlarge) 12u$(small) footer-text" style="width:100%">
 							<h3>Credits</h3>
 							<h1>Sarah Wessel</h1>
 							<p>wessel.s@husky.neu.edu</p>
@@ -138,7 +138,7 @@
 
 							<h1>Alex Aubuchon</h1>
 							<p>aubuchon.al@husky.neu.edu</p>
-							<p>Contacted mapmyrun API to retrieve running route data, 
+							<p>Contacted mapmyrun API to retrieve running route data,
 								created R script to visualize running data</p>
 
 							<h1>Yasmine Ghannam</h1>
